@@ -7,32 +7,18 @@
 
 body {
     padding: 30px;
-    background-color: floralwhite;
-    display: flex; /* this is the flexbox model. It adds responsive design to its items */
-    flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
-    align-items: center; /* These next two properties center the flex items */
-    justify-content: center;
-}
-
-/*
- * Use of media query to change the flex-direction of the #pslo and #courses
- * elements when the width of the screen exceeds 925px to put
- * them side-by-side.
- */
-@media screen and (min-width: 925px) {
-    .pslo-courses-container {
-      display: flex;
-      flex-direction: row;
-      max-width: 53em;
-    }
+    background-color: #e9e8d6;
+    margin-left: 90px;
 }
 
 #main-title {
     color: black;
     font-family: 'OCR A Std', monospace, sans-serif;
     text-align: center;
-    font-size: 4rem;
+    font-size: 3rem;
     text-decoration: underline dotted #10565B;
+    text-transform: uppercase;
+    background-image: url("qa1.png");
 }
 
 h2 {
@@ -41,34 +27,50 @@ h2 {
 
 #style ul {
     list-style-type: none;
-    margin: 0;
     padding: 0;
-    overflow: hidden;
-    background-color: #f5c812;
+    background-color: #E78529;
 }
 
 #style li {
-    float: left; /*explore what happens if this is 'right' instead*/
+    float: left;
 }
 
 #style li a {
     display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+    color: #000000;
+    padding: 8px 8px 8px 8px; /*this adds some spacing around the items in our "nav bar" */
     text-decoration: none;
+    font-family: 'OCR A Std', monospace;
 }
 
 /* Change the link background color to #000 (black) on hover */
 #style li a:hover {
-    background-color: #000;
+    background-color: #1E9DB6;
 }
 
 #style {
     position: fixed;
-    background-color: #E78529;
+    background-color: #E55028;
     left: 0;
     bottom: 0;
     top: 0;
-    padding-top: 10px;
+    overflow-x: hidden;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 90px;
+    margin-left: 0px;
+}
+
+#pslo {
+    font-family: 'times new roman', monospace;
+    background-color: #E01A47;
+    border-color: #b71a44;
+    border-style: solid;
+    border-top-width: 5px;
+    border-left-width: 5px;
+    border-bottom-width: 10px;
+    border-right-width: 10px;
 }
