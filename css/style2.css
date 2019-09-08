@@ -6,23 +6,25 @@
  */
 
 body {
-    padding: 30px;
+    padding: 25px;
     background-color: #e9e8d6;
-    margin-left: 90px;
+    margin-left: 100px;
 }
 
 #main-title {
     color: black;
     font-family: 'OCR A Std', monospace, sans-serif;
-    text-align: center;
+    text-align: right;
     font-size: 3rem;
     text-decoration: underline dotted #10565B;
     text-transform: uppercase;
-    background-image: url("qa1.png");
+    background-image: url("/lab-1-emma-and-machi/assets/images/qa1.png");
 }
 
 h2 {
     font-family: 'OCR A Std', monospace, sans-serif;
+    text-align: center;
+    text-decoration: underline dotted black;
 }
 
 #style ul {
@@ -60,17 +62,74 @@ h2 {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: right;
-    width: 90px;
+    width: 100px;
     margin-left: 0px;
 }
 
+.section {
+	font-family: 'times new roman', monospace;
+}
+
 #pslo {
-    font-family: 'times new roman', monospace;
     background-color: #E01A47;
     border-color: #b71a44;
     border-style: solid;
-    border-top-width: 5px;
-    border-left-width: 5px;
-    border-bottom-width: 10px;
-    border-right-width: 10px;
+    border-width: 5px;
+}
+
+#courses {
+	background-color: #209040;
+	border-color: #1b7834;
+	border-style: solid;
+	border-width: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#faculty {
+	background-color: #1F9DB6;
+	border-color: #1a7d93;
+	border-style: solid;
+	border-width: 5px;
+	
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.name {
+	font-family: 'times new roman', monospace;
+	list-style-type: none;
+}
+
+#faculty>ul>li {
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 30px;
+}
+
+#faculty-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                        isn't enough space for all of the items. Without this the
+                        faculty images will be in a row and only resize well unitl around
+                        550px width of screen. */
+    justify-content: center;
+    align-content: center;
+}
+
+.name {
+  font-family: 'OCR A Std', monospace, sans-serif;
+  font-size: 2rem;
+}
+
+.office {
+  font-family: 'times new roman', monospace;
+}
+
+img.pic {
+    width: 100%;
+    border: 4px solid #1a7d93;
 }
