@@ -7,34 +7,34 @@
 
 body {
     padding: 25px;
-    background-color: #e9e8d6;
+    /* TODO: creates a margin where the style selection bar can fit*/
     margin-left: 100px;
+
+    /* TODO: Inserts a background image into the webpage and orients it in the top left corner*/
+    background: url("../assets/images/background.png") top left repeat #e9e8d6;
 }
 
-img {
-	width: 100%;
-	height 100px;
-	background-image: url('qa1.png');
-	background-repeat: no repeat;
-	background-size: contain;
-}
-
+/* main-title is an id from the html page*/
 #main-title {
     color: black;
     font-family: 'OCR A Std', monospace, sans-serif;
     text-align: right;
     font-size: 3rem;
-    text-decoration: underline dotted #10565B;
+    text-decoration: underline overline dotted #209040; /* Created a decoration around the main-title text.*/
     text-transform: uppercase;
-    background-image: url("/lab-1-emma-and-machi/assets/images/qa1.png");
+
+    background: #e9e8d6;
 }
 
-h2 {
-    font-family: 'OCR A Std', monospace, sans-serif;
+h2, #validation h6 {
+    font-size: 2rem;
+    font-family: 'OCR A Std', monospace;
     text-align: center;
     text-decoration: underline dotted black;
 }
 
+
+/* The use of selecting properties within #style to modify is an example of nesting.*/
 #style ul {
     list-style-type: none;
     padding: 0;
@@ -53,7 +53,6 @@ h2 {
     font-family: 'OCR A Std', monospace;
 }
 
-/* Change the link background color to #000 (black) on hover */
 #style li a:hover {
     background-color: #1E9DB6;
 }
@@ -74,11 +73,13 @@ h2 {
     margin-left: 0px;
 }
 
+
 .section {
 	font-family: 'times new roman', monospace;
 }
 
-#pslo {
+/*this is an example of grouping. */
+#pslo, #validation {
     background-color: #E01A47;
     border-color: #b71a44;
     border-style: solid;
@@ -101,13 +102,10 @@ h2 {
 	border-width: 5px;
 	
 	display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-}
-.name {
-	font-family: 'times new roman', monospace;
-	list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
 }
 
 #faculty>ul>li {
@@ -128,8 +126,11 @@ h2 {
     align-content: center;
 }
 
+
+/* name is a class from the main html page*/
 .name {
   font-family: 'OCR A Std', monospace, sans-serif;
+  text-decoration: underline dashed #1a7d93;
   font-size: 2rem;
 }
 
@@ -140,4 +141,5 @@ h2 {
 img.pic {
     width: 100%;
     border: 4px solid #1a7d93;
+    border-radius: 50%; /* TODO: This addition gives the faculty pics rounded edges, making them circular.*/
 }
