@@ -12,6 +12,7 @@ body {
   flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
    align-items: center;  /*These next two properties center the flex items */
   justify-content: center;
+  margin-top: 80px;
 }
 
 @media screen and (min-width: 925px) {
@@ -46,6 +47,9 @@ body {
   background: palegreen;
   border-bottom: solid 10px #aac5de;
   border-radius: 9px;
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans";
 }
 
 .section li {
@@ -57,10 +61,101 @@ body {
   float: left;
 }
 
-.faculty-container section {
-  height: 500px;
+.faculty-container section{
+  align-items: center;
+  justify-content: center;;
+  width: 700px;
+  height: 700px;
+  font-family: "PT Sans";
+}
+
+img.pic {
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.name {
+  font-size: 20px;
+  text-align: center;
+}
+
+.office {
+  font-size: 20px;
+  text-align: center;
+}
+
+.faculty-container h2 {
+  margin-right: 10px;
+  font-family: "PT Sans";
+}
+
+.card {
+  margin-top: 80px;
+}
+
+.card-body {
+  position: relative;
+  margin: 2em 0;
+  padding: 0.5em 1em;
+  border: solid 3px palegreen;
+  border-radius: 10px;
+}
+.card h6 {
+  position: absolute;
+  display: inline-block;
+  top: -65px;
+  left: 0;
+  padding: 0 9px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 17px;
+  background: palegreen;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px 5px 0 0;
+}
+
+.card-text {
+  margin: 0;
+  padding: 0;
+}
+
+#style {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 55px;
+  padding-top: 10px;
+  text-align: center;
+  background-color: white;
+}
+
+#style li{
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+  line-height: 80px;
+  border: solid 3px limegreen;
+  margin-right: 10px;
+}
+
+#style li a {
+  display: block;
+  color: limegreen;
+  text-align: center;
+  text-decoration: none;
+  font-family: "PT Sans";
 }
 
 
-
-
+#style li :hover {
+  background-color: lightgreen;
+  border-radius: 50%;
+  height: 80px;
+  width: 80px;
+  line-height: 80px;
+}
