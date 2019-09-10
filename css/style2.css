@@ -1,13 +1,145 @@
 /*
-hint:
-use # in front of the name of an id from your html page
-use . in front of the name of a class of things from your html page
-use , to separate a list of things that have some shared css rule
-use float to make something locate itself on the right or left
+ * hint:
+ * use # in front of the name of an id from your html page
+ * use . in front of the name of a class of things from your html page
+ * use , to separate a list of things that have some shared css rule
+ */
 
-*/
+body {
+    padding: 25px;
+    /* TODO: creates a margin where the style selection bar can fit*/
+    margin-left: 100px;
 
-body{
+    /* TODO: Inserts a background image into the webpage and orients it in the top left corner*/
+    background: url("../assets/images/background.png") top left repeat #e9e8d6;
+}
+
+/* main-title is an id from the html page*/
+#main-title {
+    color: black;
+    font-family: 'OCR A Std', monospace, sans-serif;
+    text-align: right;
+    font-size: 3rem;
+    text-decoration: underline overline dotted #209040; /* Created a decoration around the main-title text.*/
+    text-transform: uppercase;
+
+    background: #e9e8d6;
+}
+
+h2, #validation h6 {
+    font-size: 2rem;
+    font-family: 'OCR A Std', monospace;
+    text-align: center;
+    text-decoration: underline dotted black;
+}
+
+
+/* The use of selecting properties within #style to modify is an example of nesting.*/
+#style ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: #E78529;
+}
+
+#style li {
+    float: left;
+}
+
+#style li a {
+    display: block;
+    color: #000000;
+    padding: 8px 8px 8px 8px; /*this adds some spacing around the items in our "nav bar" */
+    text-decoration: none;
+    font-family: 'OCR A Std', monospace;
+}
+
+#style li a:hover {
+    background-color: #1E9DB6;
+}
+
+#style {
+    position: fixed;
+    background-color: #E55028;
+    left: 0;
+    bottom: 0;
+    top: 0;
+    overflow-x: hidden;
+    padding-right: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    width: 100px;
+    margin-left: 0px;
+}
+
+
+.section {
+	font-family: 'times new roman', monospace;
+}
+
+/*this is an example of grouping. */
+#pslo, #validation {
+    background-color: #E01A47;
+    border-color: #b71a44;
+    border-style: solid;
+    border-width: 5px;
+}
+
+#courses {
+	background-color: #209040;
+	border-color: #1b7834;
+	border-style: solid;
+	border-width: 5px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+#faculty {
+	background-color: #1F9DB6;
+	border-color: #1a7d93;
+	border-style: solid;
+	border-width: 5px;
+	
+	display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 10px;
+}
+
+#faculty>ul>li {
+    display: inline-block;
+    font-family: sans-serif;
     padding: 30px;
-    background-color: #ffffff;
+}
+
+#faculty-list {
+    padding-left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; /* This tell's the flex items to wrap if there
+                        isn't enough space for all of the items. Without this the
+                        faculty images will be in a row and only resize well unitl around
+                        550px width of screen. */
+    justify-content: center;
+    align-content: center;
+}
+
+
+/* name is a class from the main html page*/
+.name {
+  font-family: 'OCR A Std', monospace, sans-serif;
+  text-decoration: underline dashed #1a7d93;
+  font-size: 2rem;
+}
+
+.office {
+  font-family: 'times new roman', monospace;
+}
+
+img.pic {
+    width: 100%;
+    border: 4px solid #1a7d93;
+    border-radius: 50%; /* TODO: This addition gives the faculty pics rounded edges, making them circular.*/
 }
